@@ -61,4 +61,4 @@ public static class Telemetry
 
 ### Configuring where the traces are sent
 
-This hook uses the [OLTP endpoint exporter](https://opentelemetry.io/docs/languages/net/exporters/#otlp-endpoint) to send traces to the OpenTelemetry Collector. This defaults to sending traces over gRPC to `http://localhost:4317`. You can configure how the OTLP exporter behaves by setting various environment variables, as described in the [OLTP Exporter Configuration](https://opentelemetry.io/docs/languages/sdk-configuration/otlp-exporter/) documentation.
+This hook uses the [OTLP endpoint exporter](https://opentelemetry.io/docs/languages/net/exporters/#otlp-endpoint) to send traces to the OpenTelemetry Collector. This defaults to sending traces over gRPC to `http://localhost:4317`. You can configure how the OTLP exporter behaves by setting various environment variables, as described in the [OTLP Exporter Configuration](https://opentelemetry.io/docs/languages/sdk-configuration/otlp-exporter/) documentation.
