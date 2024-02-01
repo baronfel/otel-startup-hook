@@ -1,0 +1,4 @@
+{
+    "dotnet.automaticallyCreateSolutionInWorkspace": false,
+    "editor.formatOnSave": true
+}

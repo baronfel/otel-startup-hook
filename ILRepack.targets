@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <!-- ILRepack -->
+    <Target Name="ILRepacker" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
+        <ItemGroup>
+            <InputAssemblies Include="$(PublishDir)*.dll" />
+        </ItemGroup>
+    
+        <ILRepack
+            Parallel="true"
+            Internalize="true"
+            InputAssemblies="@(InputAssemblies)"
+            TargetKind="Dll"
+            OutputFile="$(PublishDir)$(AssemblyName).dll"
+        />
+    </Target>
+    <!-- /ILRepack -->
+</Project>
